@@ -17,6 +17,6 @@ terraform {
 resource "random_id" "id" {
 }
 
-output {
+output "id" {
   value = resource.random_id.id.hex
 }
